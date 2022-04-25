@@ -1,0 +1,106 @@
+{% load static %}
+<!--<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body style="background-color: #92a8d1">
+   <!--<h1> The Results are here </h1>-->
+
+   <!--<center>
+
+   <img src="{% static "DeployModelAttr/media/ABC Bank1.png" %}" alt="bank" class="center" height="150px" width="400px"/>
+   </center>
+<br>
+<br>
+
+	<h1> The customer ID {{A1}} {{ans}}</h1>
+
+	 <pre>
+
+
+	 </pre>
+
+
+
+	</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  </style>
+</head>
+<body style="background-color: #92a8d1">
+
+  <center>
+
+  <img src="{% static "DeployModelAttr/media/ABC Bank1.png" %}" alt="bank" class="center" height="150px" width="400px"/>
+  </center>
+  <br><br><br>
+
+     <div style="background-color: #92a8d1">
+    <div class="row">
+      <div class="col-sm-4">
+        <!--<span class="glyphicon glyphicon-globe logo"></span>-->
+        <img src="{% static "DeployModelAttr/media/customer.jpeg" %}" alt="cust"/>
+      </div>
+      <div class="col-sm-8">
+          <br><br><br>
+            <br><br><br>
+            <br><br><br>
+
+        	<h2 style="margin-left: 150px;font-family: math;font-style: oblique;"> The customer ID {{A1}} {{ans}}</h2>
+
+        <!--<h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
+        <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>-->
+      </div>
+
+    </div>
+  </div>
+
+    <br><br><br>
+
+<center>
+
+<!--<button type="button" class="btn btn-secondary btn-lg btn-block" style="font-family: math;font-style: oblique;font-size: 25px;">Go to Avoid Attrition Page</button>-->
+<a href="{% url 'index' %}" class="btn btn-secondary btn-lg btn-block" style="font-family: math;font-style: oblique;font-size: 25px;" role="button">Home Page</a>
+
+</center>
+
+</body>
+</html>

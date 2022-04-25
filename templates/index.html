@@ -1,0 +1,156 @@
+{% load static %}
+<!--<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body style="background-color: #92a8d1">
+		<form action="{% url 'home' %}">
+
+	<center>
+
+	<img src="{% static "DeployModelAttr/media/ABC Bank1.png" %}" alt="bank" class="center" height="150px" width="400px"/>
+	</center>
+
+   <h1> The Index is here </h1>
+	 <input type="submit" name="" value="submit">
+	 </form>
+	</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Vishaka V Shetty </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+    background-color: #92a8d1; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+	<form action="{% url 'home' %}">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PROFILE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <!--<h3 class="margin">Who Am I?</h3>-->
+  <!--<img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">-->
+	<img src="{% static "DeployModelAttr/media/ABC Bank1.png" %}" alt="bank" class="img-responsive" style="display:inline" alt="Bank" height="900px" width="900px"/>
+	<!--<h3>I'm an adventurer</h3>-->
+</div>
+
+<!-- Second Container -->
+<!--<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>-->
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+  <h3 class="margin">Where To Find Client Sustainability Prediction?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+
+			<p>Customer Prediction Model</p>
+			<p>Helps ABC Bank come up with the list of Clients who are most likely to leave the Bank.</p>
+      <!--<img src="churn1.webp" class="img-responsive margin" style="width:100%" alt="Image">-->
+			<!--<a href="https://www.qries.com/">-->
+				<a href="{% url 'home' %}">
+			<img src="{% static "DeployModelAttr/media/churn1.webp" %}" alt="churn1" class="img-responsive" style="width:500px;height: 298px"/>
+				</a>
+    </div>
+    <div class="col-sm-4">
+			<p>Avoid Attrition</p>
+			<p>Measures that can be taken to help prevent customers from leaving the bank.</p>
+
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+      <!--<img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">-->
+			<a href="{% url 'Attrition' %}">
+			<img src="{% static "DeployModelAttr/media/churn2.webp" %}" alt="churn2" class="img-responsive margin" style="width:100%;height: 298px"/>
+			</a>
+		</div>
+    <div class="col-sm-4">
+			<p>Churn Rate</p>
+			<p>Helps ABC bank know the percentage of Customers lost over the course of a month.</p>
+			<a href="{% url 'Churnform' %}">
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+      <!--<img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">-->
+			<img src="{% static "DeployModelAttr/media/churn3.webp" %}" alt="churn3" class="img-responsive margin" style="width:100%"/>
+		</a>
+		</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Project Made By Vishaka Vishwanatha Shetty</p>
+</footer>
+
+</body>
+</html>
